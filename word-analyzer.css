@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background: palevioletred;
+    font-family: 'Grenze Gotisch', cursive;
+    color: white;
+}
+
+.intro, .count {
+    position: relative;
+    left: calc(50vw - 30rem);
+    width: 60rem;
+    min-height: 5rem;
+    border: 5px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.intro {
+    top: 6rem;
+}
+
+.count {
+    top: 8rem;
+}
+
+.intro h1,
+.count h2 {
+    font-size: 3rem;
+}
+
+.intro .intro-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro .intro-flex input {
+    width: 45rem;
+    height: 5rem;
+    border: 5px solid black;
+    border-radius: 5rem;
+    font-size: 3rem;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+}
+
+.intro .intro-flex button {
+    display: block;
+    width: 7rem;
+    height: 7rem;
+    background: black;
+    color: white;
+    border: 5px solid lightgray;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Grenze Gotisch', cursive;
+    transform: scale(1);
+    transition: background 0.5s ease-out, color 0.5s ease-out, transform 0.2s ease-out;
+}
+
+.intro .intro-flex button:hover {
+    background: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+@media (max-width: 965px) {
+    html, body {
+        padding-bottom: 5rem;
+    }
+
+    .intro, .count {
+        width: 40rem;
+        min-height: 20rem;
+        left: calc(50vw - 20rem);
+    }
+    
+    .intro {
+        top: 4rem;
+    }
+
+    .count {
+        padding-top: 2.5rem;
+        top: 6rem;
+    }
+    
+    .intro h1,
+    .count h2 {
+        text-align: left;
+    }
+
+    .intro .intro-flex {
+        flex-direction: column;
+    }
+
+    .intro .intro-flex input {
+        width: 100%;
+    }
+    
+    .intro .intro-flex button {
+        width: 100%;
+        height: 5rem;
+        border-radius: 5rem;
+        margin-top: 1rem;
+        transform: none;
+        transition: background 0.5s ease-out, color 0.5 ease-out;
+    }
+
+    .intro .intro-flex button:hover {
+        background: white;
+        color: black;
+        transform: none;
+    }
+}
+
+@media (max-width: 646px) {
+    .intro, .count {
+        width: 28rem;
+        left: calc(50vw - 14rem);
+    }
+}
