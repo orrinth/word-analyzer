@@ -1,1 +1,1 @@
-# word-analyzer
+# Word Analyzer
