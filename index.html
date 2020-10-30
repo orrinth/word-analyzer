@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Orrin">
+        <meta name="description" content="Word counting, vowel counting, consonant counting">
+        <meta name="keywords" content="Word, vowel, consonant">
+        <title>Word Analyzer</title>
+        <link rel="stylesheet" href="word-analyzer.css">
+        <script src="wordAnalyzer.js" defer></script>
+    </head>
+    <body>
+        <div class="intro">
+            <h1>Enter a word:</h1>
+            <div class="intro-flex">
+                <input type="text" id="user-input">
+                <button type="button" id="submit">Submit</button>
+            </div>
+        </div>
+        <div class="count">
+            <h2 id="letter-count">Letter Count: 0</h2>
+            <h2 id="vowel-count">Vowel Count: 0</h2>
+            <h2 id="consonant-count">Consonant Count: 0</h2>
+            <h2 id="check"></h2>
+        </div>
+    </body>
+</html>
